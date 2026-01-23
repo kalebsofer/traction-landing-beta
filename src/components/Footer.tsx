@@ -12,7 +12,7 @@ const Footer = () => {
             <span className="font-semibold">Traction</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2026 Traction. Building better habits, together.
+            © 2026 Traction.
           </p>
         </div>
       </div>

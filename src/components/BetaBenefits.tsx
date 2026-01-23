@@ -5,12 +5,12 @@ const benefits = [
   {
     icon: Rocket,
     title: "Early Access",
-    description: "Be the first to experience new features before anyone else.",
+    description: "Be the first to test new features before anyone else.",
   },
   {
     icon: MessageSquare,
     title: "Shape the Product",
-    description: "Your feedback directly influences our roadmap and feature decisions.",
+    description: "Your feedback directly influences our roadmap and future features.",
   },
   {
     icon: Crown,
@@ -30,9 +30,6 @@ const BetaBenefits = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary text-sm font-semibold uppercase tracking-wider mb-4 block">
-            Beta Perks
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             What you get as an{" "}
             <span className="text-gradient">early adopter</span>

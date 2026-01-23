@@ -10,12 +10,12 @@ const requirements = [
   {
     icon: MessageCircle,
     title: "Honest Feedback",
-    description: "Tell us what works, what doesn't, and what you wish existed.",
+    description: "Tell us what works and what doesn't.",
   },
   {
     icon: Heart,
     title: "Patience",
-    description: "Accept it's still a bit rough around the edges.",
+    description: "It's still a bit rough around the edges.",
   },
 ];
 
@@ -30,9 +30,6 @@ const WhatWeNeed = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-muted-foreground text-sm font-semibold uppercase tracking-wider mb-4 block">
-            The Deal
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             What we need <span className="text-gradient">from you</span>
           </h2>
