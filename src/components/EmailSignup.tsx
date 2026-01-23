@@ -119,8 +119,8 @@ const EmailSignup = () => {
               </h3>
               <p className="text-muted-foreground text-sm">
                 {alreadyRegistered && !isSubmitted
-                  ? `We have ${email} registered. We'll reach out soon with your beta access.`
-                  : "We'll reach out soon with your beta access."}
+                  ? `We have ${email} registered. We'll reach out soon with more info.`
+                  : "We'll reach out soon with more info."}
               </p>
             </motion.div>
           ) : (

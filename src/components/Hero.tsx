@@ -20,11 +20,16 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-8 flex justify-center"
         >
-          <img
-            src="/ic_playstore.png"
-            alt="Traction"
-            className="w-20 h-20 rounded-2xl shadow-glow"
-          />
+          <div
+            className="w-20 h-20 rounded-2xl shadow-glow flex items-center justify-center"
+            style={{ background: "linear-gradient(to bottom, #E9FFEB, #1B998B)" }}
+          >
+            <img
+              src="/ic_playstore_legacy.png"
+              alt="Traction"
+              className="w-full h-full"
+            />
+          </div>
         </motion.div>
 
         {/* Badge */}
