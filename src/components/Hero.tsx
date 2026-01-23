@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
       {/* Background glow effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-glow rounded-full blur-3xl opacity-40 animate-pulse-glow" />
-      
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,12 +20,11 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-8 flex justify-center"
         >
-          <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-            <div className="flex flex-col items-center -space-y-1">
-              <ChevronUp className="w-8 h-8 text-white" strokeWidth={3} />
-              <ChevronUp className="w-8 h-8 text-white" strokeWidth={3} />
-            </div>
-          </div>
+          <img
+            src="/ic_playstore.png"
+            alt="Traction"
+            className="w-20 h-20 rounded-2xl shadow-glow"
+          />
         </motion.div>
 
         {/* Badge */}
@@ -58,7 +57,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto"
         >
           Hold yourself accountable with <span className="text-foreground font-semibold">Traction</span>. 
-          Your app for building better habits and visualizing progress.
+          Your app for building better habits.
         </motion.p>
 
         {/* CTA Arrow */}
