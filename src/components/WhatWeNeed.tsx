@@ -33,9 +33,6 @@ const WhatWeNeed = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             What we need <span className="text-gradient">from you</span>
           </h2>
-          <p className="text-muted-foreground max-w-md mx-auto">
-            In exchange for early access and lifetime free usage, we ask for:
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
