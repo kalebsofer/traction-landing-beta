@@ -33,7 +33,7 @@ const EmailSignup = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
-          setSpotsRemaining(data.spotsRemaining);
+          setSpotsRemaining(Math.max(0, data.spotsRemaining - 30));
         }
       })
       .catch(() => {});
@@ -61,7 +61,7 @@ const EmailSignup = () => {
 
       if (data.success) {
         localStorage.setItem(STORAGE_KEY, email);
-        setSpotsRemaining(data.spotsRemaining);
+        setSpotsRemaining(Math.max(0, data.spotsRemaining - 30));
         setIsSubmitted(true);
         toast.success("You're on the list!");
       } else {
