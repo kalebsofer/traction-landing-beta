@@ -16,9 +16,14 @@ const Footer = () => {
             </div>
             <span className="font-semibold">Traction</span>
           </div>
-          <p className="text-sm text-muted-foreground">
-            © 2026 Traction.
-          </p>
+          <div className="flex items-center gap-4">
+            <a href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Privacy Policy
+            </a>
+            <p className="text-sm text-muted-foreground">
+              © 2026 Traction.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
