@@ -56,7 +56,7 @@ const EmailSignup = () => {
                 Registration is now full
               </p>
               <p className="text-muted-foreground text-sm">
-                Thank you for your interest! Beta allocation is now full, watch this space for public launch updates.
+                Thank you for your interest! Watch this space for public launch updates.
               </p>
             </motion.div>
           )}
