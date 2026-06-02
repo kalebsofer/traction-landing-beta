@@ -12,7 +12,7 @@ const Privacy = () => {
         </a>
 
         <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-        <p className="text-muted-foreground mb-12">Last Updated: June 2, 2026</p>
+        <p className="text-muted-foreground mb-12">Last Updated: February 10, 2026</p>
 
         <div className="prose prose-invert max-w-none space-y-8 text-foreground/90">
           <section>
@@ -93,53 +93,6 @@ const Privacy = () => {
             </ul>
 
             <h3 className="text-xl font-medium text-foreground mt-6 mb-3">
-              Community and Social Data
-            </h3>
-            <p>
-              Traction Health includes optional community features (shared habits,
-              partnerships, and groups) that let you connect with other people, share your
-              progress, and encourage each other. These features are only available after you
-              create an account with an email address and claim a username; anonymous
-              device-based accounts cannot access community features.
-            </p>
-            <p>When you use community features, we process:</p>
-            <ul className="list-disc pl-6 space-y-1">
-              <li>
-                <strong>Public profile:</strong> your username (display name), avatar
-                (provided by your sign-in provider), and join date.
-              </li>
-              <li>
-                <strong>Connection codes and invite links:</strong> a shareable{" "}
-                <code>TRACT-XXXXXX</code> code and invite link. Anyone you give it to can view
-                a preview of your public profile and your aggregate streak and habit-count
-                statistics (unless you hide them) and send you a connection request.
-              </li>
-              <li>
-                <strong>Shared habit data:</strong> habit names, your completion progress,
-                streaks, completion rate, and group leaderboard ranking become visible to the
-                people you share with or the members of a group you join.
-              </li>
-              <li>
-                <strong>Messages and interactions:</strong> comments, nudges (with optional
-                messages), @mentions, and emoji reactions you send, shown to the other
-                participants and in their community activity feed.
-              </li>
-              <li>
-                <strong>Connections and group membership:</strong> the people you are
-                connected to and the groups you belong to.
-              </li>
-              <li>
-                <strong>Safety actions:</strong> records of users you block and reports you
-                submit about other users.
-              </li>
-            </ul>
-            <p>
-              You control how much you share: you can hide your statistics from the community,
-              change or regenerate your connection code, block other users, report abusive
-              content or behavior, and leave any group or end any share at any time.
-            </p>
-
-            <h3 className="text-xl font-medium text-foreground mt-6 mb-3">
               Device Information
             </h3>
             <p>
@@ -166,12 +119,9 @@ const Privacy = () => {
                 <strong>Performance data</strong> (app launch time, request latency, and
                 error rates)
               </li>
-              {/* §0b-2 RESOLVED 2026-06-02: credentials and community UGC are stripped from
-                  LogRocket capture in config/logrocket.ts. Wording below is accurate. */}
               <li>
-                <strong>Session diagnostics</strong> (interaction and error data via
-                LogRocket for debugging purposes, linked to your account; authentication
-                credentials and community message content are excluded from capture)
+                <strong>Session data</strong> (interaction data via LogRocket for
+                debugging purposes)
               </li>
               <li>
                 <strong>Bug report diagnostics</strong> (device model, OS version, app
@@ -262,22 +212,7 @@ const Privacy = () => {
             </div>
             <p>
               These providers process data on our behalf and are contractually obligated
-              to use it only for the purposes described above. The community features have
-              not added any new third-party service providers.
-            </p>
-
-            <h3 className="text-xl font-medium text-foreground mt-6 mb-3">
-              Sharing With Other Users
-            </h3>
-            <p>
-              When you use community features, you share information directly with other
-              people you choose to connect with. Your username, avatar, shared habit
-              progress, comments, nudges, reactions, and group leaderboard standing are
-              visible to your connections and the members of groups you join, and anyone you
-              give your connection code or invite link to can view a preview of your public
-              profile. This sharing is initiated by you and only occurs when you opt into
-              community features. We do not make your community activity public on the open
-              internet or to users you have not connected with.
+              to use it only for the purposes described above.
             </p>
             <p className="font-medium">
               We do not sell your personal information. We do not share your data with
@@ -306,17 +241,6 @@ const Privacy = () => {
               <li>
                 Bug reports and feedback are retained to improve the App and may be
                 removed upon request.
-              </li>
-              {/* FLAG (§0b-3): describes the intended target state. Current code soft-deletes
-                  with no hard-delete job, so social cascades do not fire and the 14-day grace
-                  period is not enforced. Implement deletion/anonymization + grace period (or
-                  amend this wording) before publishing. */}
-              <li>
-                When you delete your account, your community data — including connections,
-                shared habits, comments, nudges, reactions, group memberships, blocks, and
-                reports — is deleted along with your account, and your username, avatar, and
-                connection code are removed from public view. Comments, nudges, and reactions
-                you sent to others are removed from their views.
               </li>
             </ul>
           </section>
@@ -371,14 +295,7 @@ const Privacy = () => {
               </li>
               <li>
                 <strong>Anonymous Use:</strong> Use the App with a device-based account
-                without providing personal contact information. Community features are not
-                available to anonymous accounts.
-              </li>
-              <li>
-                <strong>Community Privacy:</strong> Hide your statistics from the community,
-                change or regenerate your connection code, block other users, report abusive
-                content or behavior, and leave any group or end any share at any time from
-                within the App.
+                without providing personal contact information.
               </li>
             </ul>
             <p>To exercise any of these rights, contact us at the address listed below.</p>
